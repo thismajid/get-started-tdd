@@ -9,3 +9,9 @@ describe("existance of a function", () => {
     expect(typeof reverseString).toEqual("function");
   });
 });
+
+describe("functionallity", () => {
+  it("return dcba for input of abcd", () => {
+    expect(reverseString("abcd")).toEqual("dcba");
+  });
+});
