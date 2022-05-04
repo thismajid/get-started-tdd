@@ -19,4 +19,9 @@ describe("functionallity", () => {
     expect(reverseString("clock")).toEqual("kcolc");
     expect(reverseString("clock")).not.toEqual("clock");
   });
+
+  it("return دیجم for input of مجید", () => {
+    expect(reverseString("مجید")).toEqual("دیجم");
+    expect(reverseString("مجید")).not.toEqual("دیجی");
+  });
 });
