@@ -9,3 +9,9 @@ describe("existance of a function", () => {
     expect(typeof combinations).toEqual("function");
   });
 });
+
+describe("functionallity", () => {
+  it("return 'd,o,do,g,dg,og,dog' for input of 'dog'", () => {
+    expect(combinations("dog")).toEqual("d,o,do,g,dg,og,dog");
+  });
+});
